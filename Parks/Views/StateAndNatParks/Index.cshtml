@@ -1,0 +1,15 @@
+<h1>All StateAndNatPark:</h1>
+
+<ol>
+@foreach (StateAndNatPark stateandnatpark in Model)
+{
+    <ul>
+        <li>ID: @stateandnatpark.StateAndNatParkId</li>
+        <li>Name: @stateandnatpark.Name</li>
+        <li>Type: @stateandnatpark.Type</li>
+        <li>LocationByState: @stateandnatpark.LocationByState</li>
+    </ul>
+    <a href="/StateAndNatParks/Details/@(stateandnatpark.StateAndNatParkId)"><p>View Details</p></a>
+    <br>
+}
+</ol>
