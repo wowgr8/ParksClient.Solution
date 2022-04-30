@@ -8,7 +8,7 @@ namespace Parks.Models
     public static async Task<string> GetAll()
     {
       RestClient client = new RestClient("http://localhost:5001/api");
-      RestRequest request = new RestRequest($"stateandnatparks", Method.GET);
+      RestRequest request = new RestRequest($"StateAndNatParks", Method.GET);
       var response = await client.ExecuteTaskAsync(request);
       return response.Content;
     }
